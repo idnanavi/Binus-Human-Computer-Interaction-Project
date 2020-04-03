@@ -1,0 +1,90 @@
+img{
+    width:20px;
+    height:20px;
+}
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    background-image: url('../AssetHCI/background.jpg')
+}
+
+.wrapper{
+    width:200px;
+    height:400px;
+    padding:70px;
+    background-color:white;
+    margin:auto;
+    margin-top:70px;
+}
+.wrapper-form{
+    margin:auto;
+}
+
+
+.wrapper-form input {
+    padding:20px;
+    background-color:#E2D7D7;
+    margin:auto;
+    margin-bottom:20px;
+    border:none;
+}
+
+
+.wrapper-form p{
+    margin-left:6px;
+    margin-bottom:10px;
+}
+.radio p{
+    margin-right:30px;
+}
+.radio{
+    display:Flex;
+}
+.button h2{
+    padding:20px;
+    background-color:#007193;
+    color:white;
+}
+.button{
+    cursor: pointer;
+}
+#warning{
+    color:Red;
+    margin-top:5px;
+    font-size:80%;
+}
+@media only screen and (max-width:500px){
+    .wrapper{
+        width:200px;
+        height:350px;
+        padding:50px;
+        background-color:white;
+        margin:auto;
+        margin-top:70px;
+    }
+    .wrapper-form{
+        margin:auto;
+    }
+    .wrapper-form input {
+        padding:10px;
+        background-color:#E2D7D7;
+        margin:auto;
+        margin-bottom:10px;
+        border:none;
+    }
+    
+    .wrapper-form p{
+        margin-left:6px;
+        margin-bottom:10px;
+    }
+    .button h2{
+        padding:10px;
+        background-color:#007193;
+        color:white;
+        margin-top:40px;
+    }
+}

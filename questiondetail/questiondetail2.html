@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Questions</title>
+    <link rel="stylesheet" href="questiondetail2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="../AssetHCI/logo2.png" alt="" id='logo'>
+            </div>
+            <div class="navbar">
+                <div class="inner-navbar">
+                    <ul>
+                           <li><a href="../form/form.html">Register</a></li>
+                           <li class="dropdown">
+                                <a href="#">More</a>
+                                    <div class="dropdown-content">
+                                        <a href="../jobs/jobs.html">Find jobs</a>
+                                        <a href="../ourtpartner/ourpartner.html">Our partner</a>
+                                    </div>
+                           </li>
+                            <li><a href="../question/question.html">Questions</a></li>
+                            <li><a href="../home/home.html">Home</a></li>
+                        </ul>
+                    </div>
+                </div>
+            <div class="tagline">
+                <div class="inner_tagline">
+                    <h1>Questions</h1>
+                </div>
+            </div>
+        </div>
+            <div class="content">
+                <div class="wrapper">
+                    <div class="language">
+                        <p>HTML</p>
+                        <p>Database</p>
+                        <p>C</p>
+                        <p>C++</p>
+                        <p>Python</p>
+                        <p>Java</p>
+                    </div>
+                
+                   <div class="question">
+                       
+                       <h2>How to train data with surf algorithm ?</h2>
+                       <hr>
+                       <p>Sometimes, when we have to call system call in kernel system, we invoke it's helper or related kernel functions, instead do 'syscall'. I am still wondering can we call system call in kernel space? If not, what stops us doing that. My question is a little bit weird.</p>
+                        
+                    <div class="mega-wrapper">
+                       <div class="detail">
+                            <div class="vote-wrapper">
+                                <h3>15</h3>
+                                <p>vote</p>
+                            </div>
+                            <div class="answer-wrapper">
+                                <h3>6</h3>
+                                <p>answer</p>
+                            </div>
+                            <div class="views-wrapper">
+                                <h3>40K</h3>
+                                <p>views</p>
+                            </div>
+                        </div>
+                        <div class="create">
+                            <p>asked by</p>
+                        <div class="user">
+                            <img src="../AssetHCI/hide.png" alt="">
+                            <p><b>ivan</b></p>
+                        </div>
+                        </div>
+                   </div>
+                
+                   </div>  
+                </div>
+               
+                <div class="answer">
+                    <div class="answer-2">
+                        <h2>Answer</h2>
+                        <hr>
+                        <br>
+                        <p>I don't understand your actual problem (I feel you need to explain it more in your question which is unclear and lacks a lot of useful motivation and context).</p>
+                         
+                     <div class="mega-wrapper">
+                        <div class="detail">
+                             <div class="vote-wrapper">
+                                 <h3>15</h3>
+                                 <p>vote</p>
+                             </div>
+                             <div class="answer-wrapper">
+                                 <h3>6</h3>
+                                 <p>answer</p>
+                             </div>
+                             <div class="views-wrapper">
+                                 <h3>40K</h3>
+                                 <p>views</p>
+                             </div>
+                         </div>
+                         <div class="create">
+                             <p>answer by</p>
+                         <div class="user">
+                             <img src="../AssetHCI/hide.png" alt="">
+                             <p><b>kristi</b></p>
+                         </div>
+                         </div>
+                    </div>
+                    
+                    </div> 
+                    <div class="answer-2">
+                            <hr>
+                            <br>
+                            <p>Calling system calls from inside the kernel using the sys_* interface is discouraged for the reasons that others have already mentioned. In the particular case of x86_64 (which I guess it is your architecture) and starting from kernel versions v4.17 it is now a hard requirement not to use such interface (but for a few exceptions). It was possible to invoke system calls directly prior to this version but now the error you are seeing pops up (that's why there are plenty of tutorials on the web using sys_*). The proposed alternative in the Linux documentation is to define a wrapper between the syscall and the actual syscall's code that can be called within the kernel as any other function:</p>
+                             
+                         <div class="mega-wrapper">
+                            <div class="detail">
+                                 <div class="vote-wrapper">
+                                     <h3>15</h3>
+                                     <p>vote</p>
+                                 </div>
+                                 <div class="answer-wrapper">
+                                     <h3>6</h3>
+                                     <p>answer</p>
+                                 </div>
+                                 <div class="views-wrapper">
+                                     <h3>40K</h3>
+                                     <p>views</p>
+                                 </div>
+                             </div>
+                             <div class="create">
+                                 <p>answer by</p>
+                             <div class="user">
+                                 <img src="../AssetHCI/hide.png" alt="">
+                                 <p><b>kristi</b></p>
+                             </div>
+                             </div>
+                        </div>
+                        
+                        </div> 
+                        <div class="answer-2">
+                                <hr>
+                                <br>
+                                <p>I don't understand your actual problem (I feel you need to explain it more in your question which is unclear and lacks a lot of useful motivation and context). But a general advice -following the Unix philosophy- is to minimize the size and vulnerability area of your kernel or kernel module code, and to deport, as much as convenient, such code in user-land, in particular with the help of systemd, as soon as your kernel code requires some system calls. Your question is by itself a violation of most Unix and Linux cultural norms.</p>
+                                 
+                             <div class="mega-wrapper">
+                                <div class="detail">
+                                     <div class="vote-wrapper">
+                                         <h3>15</h3>
+                                         <p>vote</p>
+                                     </div>
+                                     <div class="answer-wrapper">
+                                         <h3>6</h3>
+                                         <p>answer</p>
+                                     </div>
+                                     <div class="views-wrapper">
+                                         <h3>40K</h3>
+                                         <p>views</p>
+                                     </div>
+                                 </div>
+                                 <div class="create">
+                                     <p>answer by</p>
+                                 <div class="user">
+                                     <img src="../AssetHCI/hide.png" alt="">
+                                     <p><b>antoni</b></p>
+                                 </div>
+                                 </div>
+                            </div>
+                            
+                            </div>   
+                            <div class="answer-2">
+                                    <hr>
+                                    <br>
+                                    <p>switching from user context to kernel context (and back again on the return path). This includes things like changing the processor's privilege level, messing with gs, fiddling with stacks, and doing security mitigations (e.g. for Meltdown). These things are expensive, and if you're already in the kernel they're useless and/or dangerous.</p>
+                                     
+                                 <div class="mega-wrapper">
+                                    <div class="detail">
+                                         <div class="vote-wrapper">
+                                             <h3>15</h3>
+                                             <p>vote</p>
+                                         </div>
+                                         <div class="answer-wrapper">
+                                             <h3>6</h3>
+                                             <p>answer</p>
+                                         </div>
+                                         <div class="views-wrapper">
+                                             <h3>40K</h3>
+                                             <p>views</p>
+                                         </div>
+                                     </div>
+                                     <div class="create">
+                                         <p>answer by</p>
+                                     <div class="user">
+                                         <img src="../AssetHCI/hide.png" alt="">
+                                         <p><b>anonim</b></p>
+                                     </div>
+                                     </div>
+                                </div>
+                                
+                                </div>  
+                                <div class="answer-2">
+                                        <hr>
+                                        <br>
+                                        <p>using a "function number" parameter to find the right function to call, and calling it. This typically includes some sanity checks (does the function exist?) and a table lookup, plus code to mangle input and output parameters that's needed because the calling conventions used for system calls (in user space) is not the same as the calling convention that normal C functions use. These things are expensive, and if you're already in the kernel they're useless and/or dangerous./p>
+                                         
+                                     <div class="mega-wrapper">
+                                        <div class="detail">
+                                             <div class="vote-wrapper">
+                                                 <h3>15</h3>
+                                                 <p>vote</p>
+                                             </div>
+                                             <div class="answer-wrapper">
+                                                 <h3>6</h3>
+                                                 <p>answer</p>
+                                             </div>
+                                             <div class="views-wrapper">
+                                                 <h3>40K</h3>
+                                                 <p>views</p>
+                                             </div>
+                                         </div>
+                                         <div class="create">
+                                             <p>answer by</p>
+                                         <div class="user">
+                                             <img src="../AssetHCI/hide.png" alt="">
+                                             <p><b>yourma</b></p>
+                                         </div>
+                                         </div>
+                                    </div>
+                                    
+                                    </div>  
+                 
+                    </div>  
+                 </div>                   
+        <div class="footer">
+            <p>Copyright 2019 Queue Overflow</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

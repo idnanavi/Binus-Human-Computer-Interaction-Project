@@ -1,0 +1,255 @@
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-decoration: none;
+}
+.container{
+    width:100%;
+}
+.navbar{
+    background-color:#007193;
+    padding:15px;
+    height:12px;
+}
+.logo{
+    display:Flex;
+    justify-content: center;
+    background-color:#E2D7D7;
+}
+.logo img{
+    width:9%;
+    height:100px;
+}
+.inner-navbar{
+    margin-right:5px;
+}
+li{
+    float:right;
+}
+li a{
+    display:inline-block;
+    color:white;
+    margin-right:20px;
+}
+li .dropdown{
+    display:inline-block;
+}
+.dropdown-content{
+    display:none;
+    position:absolute;
+}
+.dropdown-content a{
+    color:white;
+    padding:15px;
+    display:block;
+    background-color:#007193;
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+.dropdown-content a:hover{
+    background-color:#E2D7D7;
+}
+.tagline{
+    background-image:url('../AssetHCI/background.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    display:flex;
+    align-items: center;
+    height:200px;
+}
+.inner_tagline{
+    margin:auto;
+}
+.inner_tagline h1{
+    margin:20px;
+    color:white;
+}
+.content{
+    background-color:#EBE8E2;
+    padding:20px;
+    padding-bottom:80px;
+}
+.wrapper{
+    display:flex;
+    justify-content: center;
+    margin:20px;
+}
+.list{
+    padding:10px;
+    background-color:white;
+    display:flex;
+    justify-content: center;
+    width:700px;
+    height:160px;
+}
+.general p{
+    margin-top:10px;
+}
+.general h2{
+    margin-bottom:5px;
+}
+#general_google{
+    margin-right:40px;
+}
+.detail{
+    display:flex;
+    margin-top:10px;
+}
+.detail img{
+    width:20px;
+    height:100%;
+    float:left;
+    margin:5px 5px;
+}
+
+.detail p{
+    margin-right:15px;
+}
+.gambar img{
+    width:100px;
+    height:50px;
+    margin-top:70px;
+    margin-left:20px;
+}
+#bukalapak img{
+    width:100px;
+    height:50px;
+    margin-top:70px;
+    margin-right:10px;
+    margin-left:20px;
+}
+.footer{
+    background-color:#007193;
+    text-align:center;
+}
+.footer p{
+    color:white;
+}
+@media only screen and (max-width:500px){
+    *{
+        margin:0;
+        padding:0;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .container{
+        width:100%;
+    }
+    .logo img{
+        width:20%;
+        height:50px;
+    }
+    .navbar{
+        background-color:#007193;
+        padding:15px;
+        height:12px;
+    }
+    
+    li{
+        float:right;
+    }
+    li a{
+        display:inline-block;
+        color:white;
+        margin-right:15px;
+    }
+    li .dropdown{
+        display:inline-block;
+    }
+    .dropdown-content{
+        display:none;
+        position:absolute;
+    }
+    .dropdown-content a{
+        color:white;
+        padding:10px;
+        display:block;
+        background-color:#007193;
+    }
+    .dropdown:hover .dropdown-content{
+        display:block;
+       
+    }
+    .dropdown-content a:hover{
+        background-color:#E2D7D7;
+    }
+    .tagline{
+        background-image:url('../AssetHCI/background.jpg');
+        background-repeat:no-repeat;
+        background-size:cover;
+        display:flex;
+        align-items: center;
+        height:200px;
+    }
+    .inner_tagline{
+        margin:auto;
+    }
+    .inner_tagline h1{
+        margin:20px;
+        color:white;
+    }
+    .inner_tagline p{
+        color:white;
+    }
+    .content{
+        background-color:#EBE8E2;
+        padding:20px;
+        padding-bottom:80px;
+    }
+    .wrapper{
+        display:flex;
+        justify-content: center;
+        margin:20px;
+    }
+    .list{
+        padding:10px;
+        background-color:white;
+        display:flex;
+        justify-content: center;
+        width:700px;
+        height:250px;
+    }
+    .general p{
+        margin-top:10px;
+    }
+    .general h2{
+        margin-bottom:5px;
+    }
+    #general_google{
+        margin-right:40px;
+    }
+    .detail{
+        display:flex;
+        margin-top:10px;
+    }
+    .detail img{
+        width:20px;
+        height:100%;
+        float:left;
+        margin:5px 5px;
+    }
+    
+    .detail p{
+        margin-right:15px;
+        font-size:70%
+    }
+    .gambar img{
+        display:none;
+    }
+    #bukalapak img{
+        width:100px;
+        height:50px;
+        margin-top:70px;
+        margin-right:10px;
+        margin-left:20px;
+    }
+    .footer{
+        background-color:#007193;
+        text-align:center;
+    }
+    .footer p{
+        color:white;
+    }
+}

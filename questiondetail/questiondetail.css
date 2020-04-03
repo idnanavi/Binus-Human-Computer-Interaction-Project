@@ -1,0 +1,309 @@
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-decoration: none;
+}
+.container{
+    width:100%;
+}
+
+.navbar{
+    background-color:#007193;
+    padding:15px;
+    height:12px;
+}
+.logo{
+    display:Flex;
+    justify-content: center;
+    background-color:#E2D7D7;
+}
+.logo img{
+    width:9%;
+    height:100px;
+}
+.inner-navbar{
+    margin-right:5px;
+}
+li{
+    float:right;
+}
+li a{
+    display:inline-block;
+    color:white;
+    margin-right:20px;
+}
+li .dropdown{
+    display:inline-block;
+}
+.dropdown-content{
+    display:none;
+    position:absolute;
+}
+.dropdown-content a{
+    color:white;
+    padding:15px;
+    display:block;
+    background-color:#007193;
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+.dropdown-content a:hover{
+    background-color:#E2D7D7;
+}
+.tagline{
+    background-image:url('../AssetHCI/background.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    display:flex;
+    align-items: center;
+    height:200px;
+    width:100%;
+}
+.inner_tagline{
+    margin:auto;
+}
+.inner_tagline h1{
+    margin:20px;
+    color:white;
+}
+.inner_tagline p{
+    color:white;
+}
+.content{
+    background-color:#E2D7D7;
+}
+.wrapper{
+    display:flex;
+    margin-left:2%;
+}
+.language{
+    background-color: #768A95;
+    margin-right:50px;
+    margin-top:20px;
+    margin-left:20px;
+    padding:10px;
+    height:150px;
+    width:100px;
+}
+.language p{
+    margin:7px;
+    color:white;
+}
+.mega-wrapper{
+    display:flex;
+}
+.create{
+    margin-top:10%;
+}
+.answer .create{
+    margin-top:5%;
+}
+.create img{
+    width:20px;
+    height:20px;
+}
+.user{
+    display:flex;
+}
+.content{
+    padding-bottom:5%;
+}
+.question{
+    background-color:#EBE8E2;
+    display:block;
+    width:950px;
+    height:200px;
+    padding:30px;
+    margin-top:20px;
+    margin-bottom:0;
+}
+.answer{
+        background-color:#EBE8E2;
+        display:block;
+        width:950px;
+        height:1150px;
+        padding:30px;
+        margin-top:20px;
+        margin-bottom:0;
+        margin-left:16%;
+}
+.answer-2{
+    margin-top:5%;
+}
+.detail{
+    display: flex;
+    margin-right:80%;
+    margin-top:10%;
+}
+.answer .detail{
+    margin-right:77%;
+    margin-top:5%;
+}
+.answer-wrapper h3{
+    margin-left:12px;
+}
+.detail p{
+    margin-right:5px;
+}
+.footer{
+    background-color:#007193;
+    text-align:center;
+}
+.footer p{
+    color:white;
+}
+@media only screen and (max-width:500px){
+    *{
+        margin:0;
+        padding:0;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .container{
+        width:100%;
+    }
+    .logo img{
+        width:20%;
+        height:50px;
+    }
+    .navbar{
+        background-color:#007193;
+        padding:15px;
+        height:12px;
+    }
+    
+    li{
+        float:right;
+    }
+    li a{
+        display:inline-block;
+        color:white;
+        margin-right:15px;
+    }
+    li .dropdown{
+        display:inline-block;
+    }
+    .dropdown-content{
+        display:none;
+        position:absolute;
+    }
+    .dropdown-content a{
+        color:white;
+        padding:10px;
+        display:block;
+        background-color:#007193;
+    }
+    .dropdown:hover .dropdown-content{
+        display:block;
+       
+    }
+    .dropdown-content a:hover{
+        background-color:#E2D7D7;
+    }
+    .tagline{
+        background-image:url('../AssetHCI/background.jpg');
+        background-repeat:no-repeat;
+        background-size:cover;
+        display:flex;
+        align-items: center;
+        height:200px;
+    }
+    .inner_tagline{
+        margin:auto;
+    }
+    .inner_tagline h1{
+        margin:20px;
+        color:white;
+    }
+    .inner_tagline p{
+        color:white;
+    }
+    .content{
+        background-color:#E2D7D7;
+    }
+    .wrapper{
+        display:block;
+      width:90%;
+     padding-top:2%;
+    }
+    .language{
+        display:flex;
+        background-color: #768A95;
+        width:70%;
+        height:12px;
+        margin-top:0;
+        margin-left:15%;
+    }
+    .language p{
+        margin:5px;
+        color:white;
+        font-size:80%;
+    }
+    .mega-wrapper{
+        display:flex;
+    }
+    .create{
+        margin-top:20%;
+    }
+    .answer .create{
+        margin-top:5%;
+    }
+    .create img{
+        width:20px;
+    }
+    .user{
+        display:flex;
+    }
+    .content{
+        padding-bottom:5%;
+    }
+    .question{
+        background-color:#EBE8E2;
+        display:block;
+        width:65%;
+        height:200px;
+        padding:30px;
+        margin-top:20px;
+        margin-bottom:0;
+        font-size:70%;
+        margin-left:15%;
+    }
+    .answer{
+        font-size:70%;
+            background-color:#EBE8E2;
+            display:block;
+            width:60%;
+            height:1000px;
+            padding:30px;
+            margin-top:20px;
+            margin-bottom:0;
+            margin-left:15%;
+    }
+    .answer-2{
+        margin-top:5%;
+    }
+    .detail{
+        display: flex;
+        margin-right:15%;
+        margin-top:20%;
+    }
+    .answer .detail{
+        margin-right:20%;
+        margin-top:5%;
+    }
+    .answer-wrapper h3{
+        margin-left:12px;
+    }
+    .detail p{
+        margin-right:5px;
+    }
+    .footer{
+        background-color:#007193;
+        text-align:center;
+    }
+    .footer p{
+        color:white;
+    }
+}

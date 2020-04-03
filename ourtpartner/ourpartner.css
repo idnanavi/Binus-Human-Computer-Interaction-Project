@@ -1,0 +1,199 @@
+
+.test img{
+    width:100px;
+    height:50px;
+    padding:40px;
+    margin:30px 20px 20px 20px;
+    background-color:white;
+}
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-decoration: none;
+}
+.container{
+    width:100%;
+}
+.logo{
+    display:Flex;
+    justify-content: center;
+    background-color:#E2D7D7;
+}
+.logo img{
+    width:9%;
+    height:100px;
+}
+.navbar{
+    background-color:#007193;
+    padding:15px;
+    height:12px;
+}
+.inner-navbar{
+    margin-right:5px;
+}
+li{
+    float:right;
+}
+li a{
+    display:inline-block;
+    color:white;
+    margin-right:20px;
+}
+li .dropdown{
+    display:inline-block;
+}
+.dropdown-content{
+    display:none;
+    position:absolute;
+}
+.dropdown-content a{
+    color:white;
+    padding:15px;
+    display:block;
+    background-color:#007193;
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+.dropdown-content a:hover{
+    background-color:#E2D7D7;
+}
+.tagline{
+    background-image:url('../AssetHCI/background.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    display:flex;
+    align-items: center;
+    height:200px;
+}
+.inner_tagline{
+    margin:auto;
+}
+.inner_tagline h1{
+    margin:20px;
+    color:white;
+}
+.inner_tagline p{
+    color:white;
+}
+.content{
+    background-color:#EBE8E2;
+}
+.partner{
+    display:flex;
+    justify-content: center;
+}
+.partner2{
+    display:flex;
+    justify-content: center;
+}
+.partner3{
+    display:flex;
+    justify-content: center;
+    padding-bottom:92px;
+}
+.footer{
+    background-color:#007193;
+    text-align:center;
+}
+.footer p{
+    color:white;
+}
+@media only screen and (max-width:500px){
+    .test img{
+       width:30%;
+       padding:40px;
+       
+       background-color:white;
+    }
+    *{
+        margin:0;
+        padding:0;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .container{
+        width:100%;
+    }
+    .logo img{
+        width:20%;
+        height:50px;
+    }
+    .navbar{
+        background-color:#007193;
+        padding:15px;
+        height:12px;
+    }
+    
+    li{
+        float:right;
+    }
+    li a{
+        display:inline-block;
+        color:white;
+        margin-right:15px;
+    }
+    li .dropdown{
+        display:inline-block;
+    }
+    .dropdown-content{
+        display:none;
+        position:absolute;
+    }
+    .dropdown-content a{
+        color:white;
+        padding:10px;
+        display:block;
+        background-color:#007193;
+    }
+    .dropdown:hover .dropdown-content{
+        display:block;
+       
+    }
+    .dropdown-content a:hover{
+        background-color:#E2D7D7;
+    }
+    .tagline{
+        background-image:url('../AssetHCI/background.jpg');
+        background-repeat:no-repeat;
+        background-size:cover;
+        display:flex;
+        align-items: center;
+        height:200px;
+    }
+    .inner_tagline{
+        margin:auto;
+    }
+    .inner_tagline h1{
+        margin:20px;
+        color:white;
+    }
+    .inner_tagline p{
+        color:white;
+    }
+    .content{
+        background-color:#EBE8E2;
+    }
+    .test{
+        margin-left:20%;
+    }
+    .partner{
+       display:block;
+       
+    }
+    .partner2{
+       display:block;
+       
+    }
+    .partner3{
+       display:block;
+    }
+    .footer{
+        background-color:#007193;
+        text-align:center;
+    }
+    .footer p{
+        color:white;
+    }
+}

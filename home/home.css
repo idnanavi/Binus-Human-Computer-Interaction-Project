@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-decoration: none;
+}
+.container{
+    width:100%;
+}
+.logo{
+    display:Flex;
+    justify-content: center;
+    background-color:#E2D7D7;
+}
+.logo img{
+    width:9%;
+    height:100px;
+}
+.navbar{
+    background-color:#007193;
+    padding:15px;
+    height:12px;
+}
+.inner-navbar{
+    margin-right:5px;
+}
+li{
+    float:right;
+}
+li a{
+    display:inline-block;
+    color:white;
+    margin-right:20px;
+}
+li .dropdown{
+    display:inline-block;
+}
+.dropdown-content{
+    display:none;
+    position:absolute;
+}
+.dropdown-content a{
+    color:white;
+    padding:15px;
+    display:block;
+    background-color:#007193;
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+.dropdown-content a:hover{
+    background-color:#E2D7D7;
+}
+.tagline{
+    background-image:url('../AssetHCI/background+nummber.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    align-items: center;
+    height:1100px;
+}
+.inner_tagline{
+    margin:auto;
+}
+.inner_tagline h1{
+    margin:20px;
+    color:white;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+  padding:80px;
+}
+
+.quote{
+    text-align: center;
+}
+
+.quote h1{
+    color:white;
+    font-size:50px;
+}
+
+#Carousel2{
+    display: none;
+}
+#Carousel3{
+    display:none;
+}
+
+.buttonType{
+    text-align: center;
+}
+
+.button {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-left: 2px;
+  margin-left: 2px;
+  background-color: #cdd0d6;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .button:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+.content{
+    background-color: hsla(240, 100%, 100%, 0.3);
+    height:600px;
+    margin-top:70px;
+}
+
+.content ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.content h1{
+    text-align: center;
+}
+
+.content li{
+    margin:60px;
+}
+
+.content ul li span{
+    background-color:#ffffff;
+    padding:50px;
+    font-weight: bold
+}
+
+.footer{
+    background-color:#007193;
+    text-align:center;
+}
+.footer p{
+    color:white;
+}
+
+@media only screen and (max-width:500px){
+    *{
+        margin:0;
+        padding:0;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .container{
+        width:100%;
+    }
+    .navbar{
+        background-color:#007193;
+        padding:15px;
+        height:12px;
+    }
+    .logo img{
+        width:20%;
+        height:50px;
+    }
+    li{
+        float:right;
+    }
+    li a{
+        display:inline-block;
+        color:white;
+        margin-right:5px;
+    }
+    li .dropdown{
+        display:inline-block;
+    }
+    .dropdown-content{
+        display:none;
+        position:absolute;
+        margin:100%;
+    }
+    .dropdown-content a{
+        color:white;
+        padding:10px;
+        display:block;
+        background-color:#007193;
+    }
+    .dropdown:hover .dropdown-content{
+        display:block;
+       
+    }
+    .dropdown-content a:hover{
+        background-color:#E2D7D7;
+    }
+    .tagline{
+        background-image:url('../AssetHCI/background+nummber.png');
+        background-repeat:no-repeat;
+        background-size:cover;
+        align-items: center;
+        height:1100px;
+    }
+
+    .content ul{
+        width:2%;
+    
+    }
+
+    .inner_tagline{
+        margin:auto;
+    }
+    .inner_tagline h1{
+        margin:20px;
+        color:white;
+    }
+    .footer{
+        background-color:#007193;
+        text-align:center;
+    }
+    .footer p{
+        color:white;
+    }
+}
